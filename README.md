@@ -1,6 +1,4 @@
-# Nome do Seu Projeto
-
-Projeto Carrinho de Compras
+# Projeto Carrinho de Compras
 
 ## Tecnologias Utilizadas
 
