@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components"
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { CartProvider } from "@/app/_hooks/useCartcomponents"
 import { DrawerProvider } from "@/app/_hooks/useDrawercomponents"
+import { ToastContainer } from "react-toastify"
 
 
 export const Providers = ({
@@ -20,6 +21,7 @@ export const Providers = ({
                     {/* @ts-ignore */}
                     <DrawerProvider>
                         {children}
+                        <ToastContainer></ToastContainer>
                     </DrawerProvider>
                 </CartProvider>
             </QueryClientProvider>

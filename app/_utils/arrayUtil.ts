@@ -1,5 +1,7 @@
+import { GroupBy } from "../_interfaces/GroupBy";
+
 export class ArrayUtil {
-    static groupBy(array:Array<any>, key:string) {
+    static groupBy<T>(array:Array<T | any>, key:string) : GroupBy<T>  {
         return array.reduce(function (acc, item) {
         const groupKey = item[key];
     
@@ -13,5 +15,16 @@ export class ArrayUtil {
     
         return acc;
         }, {});
+    }
+
+    static removeItemByKey<T>(array:Array<T>, object:T | any, key:string){
+        const auxProducts = array;
+        const indexParaRemover = auxProducts.findIndex((item:T | any) => item[key] === object[key]);
+    
+        if (indexParaRemover !== -1) {
+          auxProducts.splice(indexParaRemover, 1);
+        }
+
+        return auxProducts;
     }
 }

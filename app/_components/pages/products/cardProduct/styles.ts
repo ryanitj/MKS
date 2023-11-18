@@ -14,7 +14,7 @@ export const Container = styled.div`
     width: 100%;
     margin: 3.95vh 10px;
     max-height: 37vh;
-    height: 80%;
+    height: 82%;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
     position: relative;
 `
@@ -78,9 +78,9 @@ export const CardBuyButton = styled.div`
     transition: all 0.25s ease-in-out;
     cursor: pointer;
     
-    -webkit-user-select: none; /* Safari */
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
+    webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 
     & > p {
         font-size: 14px;

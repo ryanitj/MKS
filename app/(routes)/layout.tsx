@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google'
 import { Layout } from '../_components/layout'
 import { Providers } from '../_components/providers'
 import 'react-loading-skeleton/dist/skeleton.css'
+import 'react-toastify/dist/ReactToastify.css';
 import '../_styles/globals.css'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <Providers> 
+        <Providers>
           <Layout>
             {children}
           </Layout>

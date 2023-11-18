@@ -7,10 +7,6 @@ interface IPalette {
   contrastText: string
 }
 
-interface ColorItem { 
-    [n:number]:string 
-}
-
 type Theme = typeof theme;
 
 declare module 'styled-components' {

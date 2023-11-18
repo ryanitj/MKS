@@ -8,12 +8,17 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
+
+    @media (max-width: 768px) {
+        padding: 20px 20px;
+    }
 `
 
 export const CardButtonContainer = styled.div`
     padding: 10px;
     height: 5.75vh;
-    width: 100px;
+    width: 5.45vw;
+    min-width:70px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,12 +33,29 @@ export const CardButtonContainer = styled.div`
 `
 
 export const CartIcon = styled(Image).attrs({src:CartIconSvg})`
-    width: 3.10vh;
-    height: 3.10vh;
+    width: 2.50vh;
+    height: 2.50vh;
 `
 
 export const CartNumber = styled.p`
     color: ${props => props.theme.colors.common.black["500"]};
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 2.50vh;
+`
+
+export const Logo = styled.div`
+    display:flex;
+    align-items:flex-end;
+    gap:8px;
+    color:white;
+
+
+    & > h2 {
+        font-weight:600;
+        font-size:32px;
+    }
+    & > h5 {
+        font-weight:200;
+        margin-bottom:8px;
+    }
 `

@@ -5,11 +5,11 @@ import React from 'react';
 import { Container, Content } from './styles';
 import { NavBar } from './_components/navbar';
 import { Footer } from './_components/footer';
-import { CardButtonContainer, CartIcon, CartNumber } from './_components/navbar/styles';
+import { CardButtonContainer, CartIcon, CartNumber, Logo } from './_components/navbar/styles';
 import { useCart } from '@/app/_hooks/useCartcomponents';
 import { useDrawer } from '@/app/_hooks/useDrawercomponents';
 
-export const Layout = ({children}: React.PropsWithChildren) => {
+export const Layout = ({ children }: React.PropsWithChildren) => {
     const {
         products
     } = useCart();
@@ -21,7 +21,10 @@ export const Layout = ({children}: React.PropsWithChildren) => {
     return (
         <Container>
             <NavBar>
-                <div></div>
+                <Logo>
+                    <h2>MKS</h2>
+                    <h5>Sistemas</h5>
+                </Logo>
                 <CardButtonContainer
                     onClick={() => {
                         actions.toggleDrawer();
@@ -36,7 +39,7 @@ export const Layout = ({children}: React.PropsWithChildren) => {
                 {children}
             </Content>
             <Footer>
-                {/* <p>MKS sistemas © Todos os direitos reservados</p> */}
+                <p>MKS sistemas © Todos os direitos reservados</p>
             </Footer>
         </Container>
     )

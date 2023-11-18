@@ -1586,7 +1586,7 @@ packages:
 
   /next@13.5.6(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Y2wTcTbO4WwEsVb4A8VSnOsG1I9ok+h74q0ZdxkwM3EODqrs4pasq7O0iUxbcS9VtWMicG7f3+HAj0r1+NtKSw==}
-    engines: {node: '>=16.14.0'}
+    engines: {node: '>=16.13.0'}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
